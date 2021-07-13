@@ -50,6 +50,7 @@
             tools:layout_editor_absoluteY="172dp" />
 
     <Button
+        android:id="@+id/CJoin_Btn"
         android:layout_marginTop="50dp"
         android:layout_width="267dp"
         android:layout_height="wrap_content"

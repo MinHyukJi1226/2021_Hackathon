@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".JoinActivity">
+
+    <ImageView
+            android:layout_width="176dp"
+            android:layout_height="109dp"
+            android:src="@drawable/appicon"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:textSize="24dp"/>
+
+
+    <LinearLayout
+            android:layout_marginTop="220dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/signin_user"
+                android:layout_width="177dp"
+                android:layout_height="56dp"
+                android:text="일반"
+                android:background="@drawable/button_style2"/>
+
+        <Button
+                android:id="@+id/signin_broker"
+                android:layout_width="177dp"
+                android:layout_height="56dp"
+                android:text="부동산 관계자"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/button_style1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

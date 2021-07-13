@@ -6,13 +6,21 @@
 
     <application
             android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
+            android:icon="@mipmap/ic_icon"
             android:label="@string/app_name"
-            android:usesCleartextTraffic="true"
-            android:roundIcon="@mipmap/ic_launcher_round"
+            android:roundIcon="@mipmap/ic_icon_round"
             android:supportsRtl="true"
-            android:theme="@style/Theme.2021_hackathon_android">
-        <activity android:name=".PriceActivity"></activity>
+            android:theme="@style/Theme.2021_hackathon_android"
+            android:usesCleartextTraffic="true">
+        <activity android:name=".BrokerLoginActivity"/>
+        <activity android:name=".LoginSelectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PriceActivity" />
         <activity android:name=".BrokerRequestActivity" />
         <activity android:name=".CommonRequestActivity" />
         <activity android:name=".BrokerAddActivity" />
@@ -22,11 +30,6 @@
         <activity android:name=".CommonJoinActivity" />
         <activity android:name=".JoinActivity" />
         <activity android:name=".LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".CommonMainActivity" />
     </application>

@@ -9,7 +9,7 @@ object RetrofitClient {
     private val gson = GsonBuilder().setLenient().create()
 
     // 서버 주소
-    private const val BASE_URL = "http://192.168.3.164:3000"
+    private const val BASE_URL = "http://192.168.85.164:3000"
 
     fun getService(client: Retrofit): RetrofitService {
         return client.create(RetrofitService::class.java)
