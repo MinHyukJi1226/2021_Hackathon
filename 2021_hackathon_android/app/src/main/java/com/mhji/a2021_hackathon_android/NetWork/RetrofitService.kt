@@ -29,7 +29,7 @@ interface RetrofitService {
 
     @FormUrlEncoded
     @POST("broker/signup")
-    fun brokerSignUp(
+    fun brokerSignUpRequest(
         @Body brokerSignUpBody: BrokerSignUpBody
     ) : Call<brokerSignUp>
 }

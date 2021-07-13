@@ -8,7 +8,11 @@ import android.widget.EditText
 import android.widget.Toast
 import com.mhji.a2021_hackathon_android.NetWork.RetrofitService
 import com.mhji.a2021_hackathon_android.NetWork.UserLogin
+import com.mhji.a2021_hackathon_android.NetWork.brokerSignUp
+import com.mhji.a2021_hackathon_android.NetWork.userSignUp
+import com.mhji.a2021_hackathon_android.data.BrokerSignUpBody
 import com.mhji.a2021_hackathon_android.data.LoginBody
+import com.mhji.a2021_hackathon_android.data.UserSignUpBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -32,15 +36,15 @@ class CommonJoinActivity : AppCompatActivity() {
 
 
         signUpBtn.setOnClickListener {
-            service.userLoginRequest(LoginBody(SignUpId.text.toString(), SignUpPw.text.toString(), )).enqueue(object :
-                Callback<UserLogin> {
-                override fun onResponse(call: Call<UserLogin>, response: Response<UserLogin>) {
+            service.userSignUpRequest(UserSignUpBody(SignUpId.text.toString(), SignUpPw.text.toString(), SignUpPhone.text.toString())).enqueue(object :
+                Callback<userSignUp> {
+                override fun onResponse(call: Call<userSignUp>, response: Response<userSignUp>) {
 //                    Log.d("LOG", "${response.code()}")
                     val intent : Intent = Intent(this@CommonJoinActivity, LoginActivity::class.java)
                     startActivity(intent)
                 }
 
-                override fun onFailure(call: Call<UserLogin>, t: Throwable) {
+                override fun onFailure(call: Call<userSignUp>, t: Throwable) {
                     Toast.makeText(this@CommonJoinActivity, "연결 실패.....", Toast.LENGTH_SHORT).show()
                 }
             })

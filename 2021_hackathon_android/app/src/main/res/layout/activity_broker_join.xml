@@ -53,6 +53,7 @@
         android:hint="부동산 전화번호" />
 
     <Button
+            android:id="@+id/BJoin_btn"
             android:layout_marginTop="50dp"
             android:layout_width="267dp"
             android:layout_height="wrap_content"

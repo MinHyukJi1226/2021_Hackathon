@@ -44,13 +44,13 @@ class BrokerLoginActivity : AppCompatActivity() {
         BloginBtn.setOnClickListener {
             service.brokerLoginRequest(BrokerLoginBody(BloginEdittext.text.toString(), BpwEdittext.text.toString())).enqueue(object :
                 Callback<brokerLogin> {
-                override fun onResponse(call: Call<UserLogin>, response: Response<UserLogin>) {
+                override fun onResponse(call: Call<brokerLogin>, response: Response<brokerLogin>) {
 //                    Log.d("LOG", "${response.code()}")
                     val intent : Intent = Intent(this@BrokerLoginActivity, BrokerMainActivity::class.java)
                     startActivity(intent)
                 }
 
-                override fun onFailure(call: Call<UserLogin>, t: Throwable) {
+                override fun onFailure(call: Call<brokerLogin>, t: Throwable) {
                     Toast.makeText(this@BrokerLoginActivity, "연결 실패.....", Toast.LENGTH_SHORT).show()
                 }
             })
