@@ -1,6 +1,6 @@
 package com.mhji.a2021_hackathon_android.NetWork
 
-data class userLogin(
+data class UserLogin(
     val id: String,
     val pw : String
 )
@@ -24,4 +24,3 @@ data class brokerSignUp(
     val county : String,
     val name : String
 )
-

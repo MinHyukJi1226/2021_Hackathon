@@ -7,23 +7,6 @@
     android:orientation="vertical"
     tools:context=".BrokerMainActivity">
 
-    <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|top"
-            android:orientation="horizontal">
-
-        <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-        <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-    </LinearLayout>
-
     <androidx.recyclerview.widget.RecyclerView
             android:layout_marginTop="80dp"
             android:layout_width="wrap_content"
