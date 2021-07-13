@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CommonJoinActivity">
+
+    <ImageView
+        android:layout_width="152dp"
+        android:layout_height="99dp"
+        android:src="@drawable/appicon"/>
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/yellow1"
+        android:id="@+id/Cjoin_id_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="ID"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/yellow1"
+        android:id="@+id/Cjoin_pw_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <EditText
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/yellow1"
+            android:id="@+id/Cjoin_phone_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="PhoneNumber"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="172dp" />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style1"
+        android:text="가입하기"/>
+</LinearLayout>

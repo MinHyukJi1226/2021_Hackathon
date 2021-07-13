@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="152dp"
+            android:src="@drawable/appicon"/>
+
+    <EditText
+            android:id="@+id/login_id"
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ID"
+            android:backgroundTint="@color/yellow1"/>
+
+    <EditText
+            android:id="@+id/login_pw"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:backgroundTint="@color/yellow1"/>
+
+    <TextView
+            android:id="@+id/toSignUp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계정이 없으신가요?"/>
+
+    <Button
+            android:id="@+id/login_btn"
+            android:layout_marginTop="111dp"
+            android:layout_width="257dp"
+            android:layout_height="56dp"
+            android:text="LOGIN"
+            android:textSize="20sp"
+            android:background="@drawable/button_style1"/>
+
+</LinearLayout>
