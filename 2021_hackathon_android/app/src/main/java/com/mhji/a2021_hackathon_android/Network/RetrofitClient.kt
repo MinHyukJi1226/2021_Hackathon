@@ -1,4 +1,4 @@
-package com.mhji.a2021_hackathon_android.NetWork
+package com.mhji.a2021_hackathon_android.Network
 
 import com.google.gson.GsonBuilder
 import retrofit2.Retrofit

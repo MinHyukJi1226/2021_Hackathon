@@ -3,13 +3,10 @@ package com.mhji.a2021_hackathon_android
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.*
-import com.mhji.a2021_hackathon_android.NetWork.RetrofitService
-import com.mhji.a2021_hackathon_android.NetWork.brokerSignUp
-import com.mhji.a2021_hackathon_android.NetWork.userSignUp
+import com.mhji.a2021_hackathon_android.Network.RetrofitService
+import com.mhji.a2021_hackathon_android.Network.brokerSignUp
 import com.mhji.a2021_hackathon_android.data.BrokerSignUpBody
-import com.mhji.a2021_hackathon_android.data.UserSignUpBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

@@ -3,14 +3,13 @@ package com.mhji.a2021_hackathon_android
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.mhji.a2021_hackathon_android.NetWork.RetrofitClient
-import com.mhji.a2021_hackathon_android.NetWork.RetrofitService
-import com.mhji.a2021_hackathon_android.NetWork.UserLogin
+import com.mhji.a2021_hackathon_android.Network.RetrofitClient
+import com.mhji.a2021_hackathon_android.Network.RetrofitService
+import com.mhji.a2021_hackathon_android.Network.UserLogin
 import com.mhji.a2021_hackathon_android.data.LoginBody
 import retrofit2.Call
 import retrofit2.Callback

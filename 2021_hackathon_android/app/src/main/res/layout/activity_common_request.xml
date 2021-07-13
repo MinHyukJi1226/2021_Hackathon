@@ -1,9 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
         tools:context=".CommonRequestActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/house"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_marginStart="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가격"
+                android:textSize="18dp"
+                android:layout_marginTop="40dp"/>
+
+        <TextView
+                android:layout_marginStart="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1조 5백만원"
+                android:textSize="36dp"
+                android:layout_marginTop="6dp"/>
+
+        <TextView
+                android:layout_marginStart="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="포항시 북구 장성동"
+                android:textSize="24dp"
+                android:layout_marginTop="23dp"/>
+
+        <TextView
+                android:layout_marginStart="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="태융부동산  010 - 1234 -1234"
+                android:textSize="24dp"
+                android:layout_marginTop="6dp"/>
+
+    </LinearLayout>
+
+    <Button
+            android:layout_marginTop="200dp"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style1"
+            android:textColor="@color/white"
+            android:text="신청 받기"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+        <Button
+                android:id="@+id/allSale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="전체 매물"
+                android:background="@drawable/button_style1"/>
+
+        <Button
+                android:id="@+id/requestSale"
+                android:layout_weight="1"
+                android:text="내가 예약한 매물"
+                android:background="@drawable/button_style2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

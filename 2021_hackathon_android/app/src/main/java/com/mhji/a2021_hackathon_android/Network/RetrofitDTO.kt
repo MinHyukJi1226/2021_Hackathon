@@ -1,4 +1,4 @@
-package com.mhji.a2021_hackathon_android.NetWork
+package com.mhji.a2021_hackathon_android.Network
 
 data class UserLogin(
     val id: String,
@@ -23,4 +23,14 @@ data class brokerSignUp(
     val city : String,
     val county : String,
     val name : String
+)
+
+data class PostAll(
+    val city: String,
+    val county: String,
+    val aptname: String,
+    val type: String,
+    val price: Int,
+    val context : String,
+    val attachment : String
 )
